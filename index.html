@@ -39,5 +39,24 @@ font-family: Verdana, sans-serif;
   <a href="https://emeraldnickel08.github.io/savoury-stuff-plus-cakes-and-cups.html">Savoury stuff/cakes and cups</a>
   <p>------------------------------------------------------------</p>
   <a href="https://emeraldnickel08.github.io/drinks-and-frozen-foods">Drinks and frozen foods</a>
+  <p>Special of the day</p>
+  <script>
+  function clickCounter1() {
+  if (typeof(Storage) !== "undefined") { if (localStorage.clickcount1) {
+  localStorage.clickcount1 = Number(localStorage.clickcount1)+1; } else {
+  localStorage.clickcount1 = 1; }
+  document.getElementById("result1").innerHTML = "You have sold " + localStorage.clickcount1 + " of these.";
+  } else {
+  
+  document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
+  } }
+  function reset1() {
+  localStorage.clickcount1 = 0; {document.getElementById("result1").innerHTML = "You have sold " + localStorage.clickcount1 + " of these."; }
+  }
+  </script>
+  <p><button onclick="clickCounter1()" type="button">+1</button></p>
+  <p><button onclick="reset1()" type="button">Reset</button> </p>
+  <div id="result1"></div>
+
 </body>
 </html>
