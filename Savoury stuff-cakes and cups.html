@@ -1,0 +1,186 @@
+<!DOCTYPE html> <html>
+<style>
+head { 
+font-family: Gill Sans, sans-serif;
+color: white;
+background-color: #3d3d3d;
+}
+body {
+font-family: Gill Sans, sans-serif;
+color: white;
+background-color: #3d3d3d;
+}
+</style>
+<head>
+<h1>Savoury Stuff</h1>
+</head>
+<body>
+<p>Large chips</p>
+<script>
+function clickCounter() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount) {
+localStorage.clickcount = Number(localStorage.clickcount)+1; 
+} else {
+localStorage.clickcount = 1; }
+document.getElementById("result").innerHTML = "You have sold " + localStorage.clickcount + " of these.";
+} else {
+document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+} }
+function reset() {
+localStorage.clickcount = 0; {document.getElementById("result").innerHTML = "You have sold " +
+localStorage.clickcount + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter()" type="button">+1</button></p>
+<p><button onclick="reset()" type="button">Reset</button></p> 
+<div id="result"></div>
+<p>Small chips</p>
+<script>
+function clickCounter2() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount2) {
+localStorage.clickcount2 = Number(localStorage.clickcount2)+1; } else {
+localStorage.clickcount2 = 1; }
+document.getElementById("result2").innerHTML = "You have sold " +
+localStorage.clickcount2 + " of these."; } else {
+document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
+} }
+function reset2() {
+localStorage.clickcount2 = 0; {document.getElementById("result2").innerHTML = "You have sold " +
+localStorage.clickcount2 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter2()" type="button">+1</button></p> <p><button onclick="reset2()" type="button">Reset</button></p> <div id="result2"></div>
+<p>Vegie chips</p>
+<script>
+function clickCounter3() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount3) { localStorage.clickcount3 = Number(localStorage.clickcount3)+1; } else {
+localStorage.clickcount3 = 1; } document.getElementById("result3").innerHTML = "You have sold " + localStorage.clickcount3 + " of these.";
+} else {
+document.getElementById("result3").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset3() {
+localStorage.clickcount3 = 0; {document.getElementById("result3").innerHTML = "You have sold " + localStorage.clickcount3 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter3()" type="button">+1</button></p> <p><button onclick="reset3()" type="button">Reset</button> </p>
+<div id="result3"></div>
+<p>Popcorn</p>
+<script>
+function clickCounter4() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount4) { localStorage.clickcount4 = Number(localStorage.clickcount4)+1; } else {
+localStorage.clickcount4 = 1; } document.getElementById("result4").innerHTML = "You have sold " + localStorage.clickcount4 + " of these.";
+} else {
+document.getElementById("result4").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset4() {
+localStorage.clickcount4 = 0; {document.getElementById("result4").innerHTML = "You have sold " +
+ 
+localStorage.clickcount4 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter4()" type="button">+1</button></p> <p><button onclick="reset4()" type="button">Reset</button> </p> <div id="result4"></div>
+<h1>Cakes and Cups</h1>
+<p>Muffins</p>
+<script>
+function clickCounter5() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount5) { localStorage.clickcount5 = Number(localStorage.clickcount5)+1; } else {
+localStorage.clickcount5 = 1; } document.getElementById("result5").innerHTML = "You have sold " + localStorage.clickcount5 + " of these.";
+} else {
+document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset5() {
+localStorage.clickcount5 = 0; {document.getElementById("result5").innerHTML = "You have sold " + localStorage.clickcount5 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter5()" type="button">+1</button></p> <p><button onclick="reset5()" type="button">Reset</button> </p>
+<div id="result5"></div>
+<p>Slices</p>
+<script>
+function clickCounter6() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount6) { localStorage.clickcount6 = Number(localStorage.clickcount6)+1; } else {
+localStorage.clickcount6 = 1; } document.getElementById("result6").innerHTML = "You have sold " + localStorage.clickcount6 + " of these.";
+} else {
+document.getElementById("result6").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset6() {
+localStorage.clickcount6 = 0; {document.getElementById("result6").innerHTML = "You have sold " + localStorage.clickcount6 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter6()" type="button">+1</button></p> <p><button onclick="reset6()" type="button">Reset</button> </p>
+<div id="result6"></div>
+<p>Cake</p>
+<script>
+function clickCounter7() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount7) { localStorage.clickcount7 = Number(localStorage.clickcount7)+1; } else
+ 
+{
+localStorage.clickcount7 = 1; } document.getElementById("result7").innerHTML = "You have sold " + localStorage.clickcount7 + " of these.";
+} else {
+document.getElementById("result7").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset7() {
+localStorage.clickcount7 = 0; {document.getElementById("result7").innerHTML = "You have sold " + localStorage.clickcount7 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter7()" type="button">+1</button></p> <p><button onclick="reset7()" type="button">Reset</button> </p>
+<div id="result7"></div>
+<p>Yoghurt and granola</p>
+<script>
+function clickCounter8() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount8) { localStorage.clickcount8 = Number(localStorage.clickcount8)+1; } else {
+localStorage.clickcount8 = 1; } document.getElementById("result8").innerHTML = "You have sold " + localStorage.clickcount8 + " of these.";
+} else {
+document.getElementById("result8").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset8() {
+localStorage.clickcount8 = 0; {document.getElementById("result8").innerHTML = "You have sold " + localStorage.clickcount8 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter8()" type="button">+1</button></p> <p><button onclick="reset8()" type="button">Reset</button> </p>
+<div id="result8"></div>
+<p>Fruit salad</p>
+<script>
+function clickCounter9() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount9) { localStorage.clickcount9 = Number(localStorage.clickcount9)+1; } else {
+localStorage.clickcount9 = 1; } document.getElementById("result9").innerHTML = "You have sold " + localStorage.clickcount9 + " of these.";
+} else {
+document.getElementById("result9").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset9() {
+localStorage.clickcount9 = 0;
+ 
+{document.getElementById("result9").innerHTML = "You have sold " + localStorage.clickcount9 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter9()" type="button">+1</button></p> <p><button onclick="reset9()" type="button">Reset</button> </p> <div id="result9"></div>
+<p>Mousse</p>
+<script>
+function clickCounter10() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount10) {
+localStorage.clickcount10 = Number(localStorage.clickcount10)+1; } else {
+localStorage.clickcount10 = 1; } document.getElementById("result10").innerHTML = "You have sold " + localStorage.clickcount10 + " of these.";
+} else {
+document.getElementById("result10").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset10() {
+localStorage.clickcount10 = 0; {document.getElementById("result10").innerHTML = "You have sold " + localStorage.clickcount10 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter10()" type="button">+1</button></p> <p><button onclick="reset10()" type="button">Reset</button> </p>
+<div id="result10"></div>
+<p>Jelly</p>
+<script>
+function clickCounter11() {
+if (typeof(Storage) !== "undefined") { if (localStorage.clickcount11) {
+localStorage.clickcount11 = Number(localStorage.clickcount11)+1; } else {
+localStorage.clickcount11 = 1; } document.getElementById("result11").innerHTML = "You have sold " + localStorage.clickcount11 + " of these.";
+} else {
+document.getElementById("result11").innerHTML = "Sorry, your browser does not support web storage...";
+}}
+function reset11() {
+localStorage.clickcount11 = 0; {document.getElementById("result11").innerHTML = "You have sold " + localStorage.clickcount11 + " of these."; }
+}
+</script>
+<p><button onclick="clickCounter11()" type="button">+1</button></p> <p><button onclick="reset11()" type="button">Reset</button> </p> <div id="result11"></div>
+</body>
+</html>
